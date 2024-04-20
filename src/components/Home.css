@@ -70,3 +70,12 @@
     line-height: 1.5;
   }
   
+  
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Make the sidebar full width */
+        height: auto; /* Allow the sidebar to adjust its height based on content */
+        position: relative; /* Remove fixed positioning */
+        padding-top: 10px; /* Adjust padding */
+    }
+}
