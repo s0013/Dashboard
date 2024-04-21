@@ -89,6 +89,7 @@
     gap: 20px;
     height: 1300px; /* Set the height of the container */
     margin-top: 20px;
+    margin-left: 20px;
   }
   .chart-item {
     width: calc(100% - 20px); /* Use the full width of the column with gap adjustment */
