@@ -1,10 +1,56 @@
 .card-container {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
+}
   
   .card {
-    width: calc(50% - 10px);
+    margin: 10px;
+    color: white;
+    width: 400px;
+    margin-left: 100px; /* Add left margin of 100px */
+    margin-top: 20px;
+    background-color: #ff0000; /* Red background for the first card */
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Glowing border with neon blue color */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition effect */
+  }
+  
+  .card:nth-child(2) {
+    background-color: #00ff00; /* Green background for the second card */
+    color: black;
+    margin-right: 20px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.8); /* Increase shadow on hover */
+  }
+  .card-container {
+    display: flex;
+    justify-content: center; /* Center the cards */
+    margin-bottom: 20px; /* Add some space between cards and grid */
+    margin-right: 20px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* Adjust the gap between grid items */
+    height: 200vh; /* Increase the height for more scroll */
+    overflow: scroll;
+  }
+  .grid-item {
+    background: linear-gradient(45deg, white, #f0f0f0);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid black; /* Black border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Glowing border effect */
+    transition: box-shadow 0.3s ease-in-out; /* Transition effect */
+  }
+  
+  .grid-item:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Increase shadow on hover for a glowing effect */
   }
   
