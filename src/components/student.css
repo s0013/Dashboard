@@ -54,4 +54,19 @@
   .grid-item:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Increase shadow on hover for a glowing effect */
   }
+  .subject-card {
+    flex: 0 1 calc(30% - 10px); /* Adjust width to fit three cards per row */
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #36A2EB;
+    position: relative;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+  }
   
