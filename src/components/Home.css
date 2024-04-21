@@ -81,3 +81,78 @@
         padding-top: 10px; /* Adjust padding */
     }
 }
+
+
+.chart-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    height: 1300px; /* Set the height of the container */
+    margin-top: 20px;
+  }
+  .chart-item {
+    width: calc(100% - 20px); /* Use the full width of the column with gap adjustment */
+    border-radius: 5px;
+    padding: 10px;
+    background: linear-gradient(145deg, #f9f9f9, #e9e9e9); /* Gradient background color */
+    border: 2px solid #6f00ff; /* Neon purple border */
+    box-shadow: 0 0 10px rgba(111, 0, 255, 0.6); /* Glowing border effect */
+    height: 100%; /* Use the full height of the container */
+    box-sizing: border-box; /* Include padding and border in height calculation */
+  }
+  
+  .chart-item canvas {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .chart-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .chart-item:nth-child(1),
+  .chart-item:nth-child(2) {
+    height: 600px;
+  }
+  
+  .chart-item:nth-child(3),
+  .chart-item:nth-child(4) {
+    height: 590px; /* Adjust the height of the last two charts */
+  }
+  
+  /* Media query for small devices */
+  @media (max-width: 768px) {
+    .chart-container {
+      display: block;
+      height: auto;
+    }
+  
+    .chart-item {
+      width: 100%;
+      margin-bottom: 20px;
+      height: auto;
+    }
+  
+    .chart-item:nth-child(1),
+    .chart-item:nth-child(2),
+    .chart-item:nth-child(3),
+    .chart-item:nth-child(4) {
+      height: auto;
+    }
+  }
+/* Media query for small devices with a width of 432px */
+/* Media query for small devices with a width of 432px */
+@media (max-width: 432px) {
+    .chart-container {
+      display: block;
+      height: auto;
+      overflow: auto; /* Add scroll for overflow content */
+    }
+  
+    .chart-item {
+      width: calc(100% - 20px); /* Use the full width of the container with gap adjustment */
+      margin-bottom: 20px;
+      height: 300px; /* Set a fixed height for each chart item */
+    }
+  }
+  
