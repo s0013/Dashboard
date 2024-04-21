@@ -1,0 +1,83 @@
+.home {
+    margin-top: 3px;
+    height: 300vh;
+    
+   
+}
+.sidebar {
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    background-color: black;
+    padding-top: 20px;
+    left: 0; /* Position the sidebar at the left edge of the screen */
+}
+.content {
+    overflow: auto; /* Add scrollbar for overflow content */
+    /* background-image: linear-gradient(to bottom right, #ff8a00, #e52e71); Gradient background color */
+    /* border: 1px solid #ccc; Add a border */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+    left: 0;
+    height: 100vh;
+
+  }
+  
+.home .content .col-md-3 {
+    border: 2px solid black; /* Add a white border */
+}
+.sidebar {
+    background-color: black;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.list-group {
+    border: none; /* Remove border from the list group */
+}
+
+.list-group-item {
+    color: white;
+    background-color: black;
+    border: none; /* Remove border from list items */
+    margin-bottom: 60px; /* Add space between menu items */
+}
+
+.list-group-item:hover {
+    background-color: orangered; /* Darken background on hover */
+    color: white;
+}
+
+.list-group-item.active {
+    background-color: orangered; /* Active item background color */
+    color: white;
+}
+.dashboard-message {
+    text-align: center;
+    margin-top: 50px;
+    color: transparent;
+    background-image: linear-gradient(to right, black, #00b4d8); /* Gradient color */
+    -webkit-background-clip: text; /* Apply gradient to text */
+    background-clip: text;
+  }
+  
+  
+  .dashboard-message h2 {
+    font-size: 75px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-message p {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+  
+  
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Make the sidebar full width */
+        height: auto; /* Allow the sidebar to adjust its height based on content */
+        position: relative; /* Remove fixed positioning */
+        padding-top: 10px; /* Adjust padding */
+    }
+}
