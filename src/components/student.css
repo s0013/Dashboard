@@ -39,6 +39,7 @@
     gap: 10px; /* Adjust the gap between grid items */
     height: 200vh; /* Increase the height for more scroll */
     overflow: scroll;
+    margin-left: 20px;
   }
   .grid-item {
     background: linear-gradient(45deg, white, #f0f0f0);
